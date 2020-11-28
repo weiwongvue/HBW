@@ -1,14 +1,18 @@
 <template>
   <div>
     <AHead></AHead>
+    <Banner></Banner>
+    <CExam></CExam>
+    <DSpecialties></DSpecialties>
+
+    <Footer></Footer>
   </div>
 </template>
 
 <script lang="ts">
-// import AHead from '@/components/home/AHead'
-//
+// import Banner from "@/components/education/Banner";
 // export default {
-//   components: {AHead}
+//   components: {Banner}
 // }
 </script>
 

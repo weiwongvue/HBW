@@ -26,61 +26,73 @@
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <p>暨南大学</p>
           </div>
         </li>
       </ul>
@@ -306,6 +318,8 @@ li {
 
 .cooperationLi {
   margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .cooperationLi div {

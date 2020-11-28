@@ -187,10 +187,10 @@
 </template>
 
 <style scoped>
-* {
-  margin: 0 auto;
-  padding: 0;
-}
+/** {*/
+/*  margin: 0 auto;*/
+/*  padding: 0;*/
+/*}*/
 
 a {
   color: #ffffff;
