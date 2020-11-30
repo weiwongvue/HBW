@@ -13,9 +13,9 @@
         <div class="col-sm-6 col-6">
           <div class="row1_map">
             <nuxt-link to="/education">华邦课堂</nuxt-link>
-            <nuxt-link to="/education">华邦课堂</nuxt-link>
-            <nuxt-link to="/education">华邦课堂</nuxt-link>
-            <nuxt-link to="/education">华邦课堂</nuxt-link>
+            <nuxt-link to="/education">资源中心</nuxt-link>
+            <nuxt-link to="/education">网站地图</nuxt-link>
+            <nuxt-link to="/education">联系我们</nuxt-link>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <li class="col"><nuxt-link to="/">首页</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">学历教育</nuxt-link></li>
         <li class="col"><nuxt-link to="/register">深圳入户</nuxt-link></li>
-        <li class="col"><nuxt-link to="/education">职业资格证书</nuxt-link></li>
+        <li class="col"><nuxt-link to="/accounting">职业资格证书</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">建筑上岗证书</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">特种操作证</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">特种设备作业</nuxt-link></li>

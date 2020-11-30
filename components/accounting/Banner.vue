@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <div class="bannerShow">
-      <img src="~static/register/banner.png" alt="华邦" title="华邦">
+      <a href="javascript:void(0);"><img src="~static/accounting/banner.png" alt="华邦" title="华邦"></a>
     </div>
   </div>
 </template>

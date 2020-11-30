@@ -4,15 +4,15 @@
       <div class="containerFooterTop">
         <div class="container">
           <ul class="row footerNav">
-            <li class="col"><a href="javascript:void(0);">首页</a></li>
-            <li class="col"><a href="javascript:void(0);">学历教育</a></li>
-            <li class="col"><a href="javascript:void(0);">深圳入户</a></li>
-            <li class="col"><a href="javascript:void(0);">职业资格证书</a></li>
-            <li class="col"><a href="javascript:void(0);">建筑上岗证书</a></li>
-            <li class="col"><a href="javascript:void(0);">特种操作证</a></li>
-            <li class="col"><a href="javascript:void(0);">特种设备作业</a></li>
-            <li class="col"><a href="javascript:void(0);">新闻中心</a></li>
-            <li class="col"><a href="javascript:void(0);">关于我们</a></li>
+            <li class="col"><nuxt-link to="/">首页</nuxt-link></li>
+            <li class="col"><nuxt-link to="/education">学历教育</nuxt-link></li>
+            <li class="col"><nuxt-link to="/register">深圳入户</nuxt-link></li>
+            <li class="col"><nuxt-link to="/accounting">职业资格证书</nuxt-link></li>
+            <li class="col"><nuxt-link to="/education">建筑上岗证书</nuxt-link></li>
+            <li class="col"><nuxt-link to="/education">特种操作证</nuxt-link></li>
+            <li class="col"><nuxt-link to="/education">特种设备作业</nuxt-link></li>
+            <li class="col"><nuxt-link to="/education">新闻中心</nuxt-link></li>
+            <li class="col"><nuxt-link to="/education">关于我们</nuxt-link></li>
           </ul>
         </div>
       </div>
@@ -20,7 +20,7 @@
         <div class="container">
           <div class="row footerAddress">
             <div class="col-6">
-              <p>地址：深圳市龙华区民治街道民治社区民治大道222东边商业大厦611</p>
+              <p>地址：深圳市龙华区民治街道民治社区民治大道222东边商业大厦603</p>
             </div>
             <div class="col-6">
               <p>服务热线：0755-23774425</p>
@@ -57,6 +57,9 @@ li {
   list-style: none;
 }
 
+.footer{
+  min-width: 1140px;
+}
 
 .containerFooter{
   background-color: #232323;
