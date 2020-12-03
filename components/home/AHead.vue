@@ -24,7 +24,7 @@
         <li class="col"><nuxt-link to="/education">学历教育</nuxt-link></li>
         <li class="col"><nuxt-link to="/register">深圳入户</nuxt-link></li>
         <li class="col"><nuxt-link to="/accounting">职业资格证书</nuxt-link></li>
-        <li class="col"><nuxt-link to="/education">建筑上岗证书</nuxt-link></li>
+        <li class="col"><nuxt-link to="/engineer">建筑上岗证书</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">特种操作证</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">特种设备作业</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">新闻中心</nuxt-link></li>
@@ -59,6 +59,10 @@ li {
 
 .container {
   min-width: 1140px;
+}
+
+.containerHeader{
+  padding-bottom: 10px;
 }
 
 .row1 {
