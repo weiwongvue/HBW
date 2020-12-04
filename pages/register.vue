@@ -1,7 +1,7 @@
 <template>
   <div>
     <AHead></AHead>
-    <Banner></Banner>
+    <BannerReg></BannerReg>
     <CTestForm></CTestForm>
     <DPlans></DPlans>
 
@@ -11,7 +11,7 @@
 
 <script lang="js">
 import AHead from '~/components/home/AHead';
-import Banner from "@/components/register/Banner"
+import BannerReg from "~/components/register/BannerReg"
 import CTestForm from "@/components/register/CTestForm"
 import DPlans from "@/components/register/DPlans"
 import Footer from '~/components/home/Footer';
@@ -20,7 +20,7 @@ import Footer from '~/components/home/Footer';
 export default {
   name: 'register',
   components: {
-    AHead, Banner, CTestForm, DPlans, Footer
+    AHead, BannerReg, CTestForm, DPlans, Footer
   }
 }
 </script>

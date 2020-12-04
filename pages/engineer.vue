@@ -1,7 +1,7 @@
 <template>
   <div>
     <AHead></AHead>
-    <Banner></Banner>
+    <BannerEng></BannerEng>
     <Construction></Construction>
 
     <Footer></Footer>
@@ -10,15 +10,15 @@
 
 <script lang="js">
 import AHead from '~/components/home/AHead';
-import Banner from "@/components/engineer/Banner"
-import Construction from "@/components/engineer/Construction "
+import BannerEng from "~/components/engineer/BannerEng"
+import Construction from "@/components/engineer/Construction"
 import Footer from '~/components/home/Footer';
 
 
 export default {
   name: 'register',
   components: {
-    AHead, Banner, Construction, Footer
+    AHead, BannerEng, Construction, Footer
   }
 }
 </script>
