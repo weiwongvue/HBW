@@ -1,8 +1,8 @@
 <template>
   <div>
     <AHead></AHead>
-    <BannerAcc></BannerAcc>
-    <CAccountCourse></CAccountCourse>
+    <BannerEle></BannerEle>
+    <CEleStudent></CEleStudent>
 
     <Footer></Footer>
   </div>
@@ -10,15 +10,15 @@
 
 <script lang="js">
 import AHead from '~/components/home/AHead';
-import BannerAcc from "~/components/accounting/BannerAcc"
-import CAccountCourse from "@/components/accounting/CAccountCourse"
+import BannerEle from "~/components/electrician/BannerEle"
+import CEleStudent from "@/components/electrician/CEleStudent"
 import Footer from '~/components/home/Footer';
 
 
 export default {
   name: 'register',
   components: {
-    AHead, BannerAcc, CAccountCourse, Footer
+    AHead, BannerEle, CEleStudent, Footer
   }
 }
 </script>
