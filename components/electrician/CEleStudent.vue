@@ -108,6 +108,65 @@
         </div>
       </div>
     </div>
+    <div class="hardware">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="">
+              <h2>电工教学硬件设施</h2>
+            </div>
+          </div>
+        </div>
+        <ul class="row hardwareUl">
+          <li class="col-3">
+            <div class="">
+              <img src="~static/electrician/hardware1.png" alt="华邦" title="华邦">
+              <p>教学设备</p>
+            </div>
+          </li>
+          <li class="col-3">
+            <div class="">
+              <img src="~static/electrician/hardware1.png" alt="华邦" title="华邦">
+              <p>教学设备</p>
+            </div>
+          </li>
+          <li class="col-3">
+            <div class="">
+              <img src="~static/electrician/hardware1.png" alt="华邦" title="华邦">
+              <p>教学设备</p>
+            </div>
+          </li>
+          <li class="col-3">
+            <div class="">
+              <img src="~static/electrician/hardware1.png" alt="华邦" title="华邦">
+              <p>教学设备</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container courseShow">
+      <div class="row">
+        <div class="col-12">
+          <div>
+            <img src="~static/electrician/course.png" alt="华邦" title="华邦">
+          </div>
+        </div>
+        <div class="col-12">
+          <div>
+            <h2>电工证书样本</h2>
+          </div>
+        </div>
+        <div class="col-12">
+          <div>
+            <img src="~static/electrician/eleCertificate2.png" alt="华邦" title="华邦">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="teaching">
+      <a href="javascript:void(0);">点击咨询&gt;&gt;</a>
+    </div>
   </div>
 </template>
 
@@ -223,12 +282,12 @@ li {
   background-position: top center;
 }
 
-.container h2{
+.certificate h2{
   margin-top: 50px;
   text-align: center;
 }
 
-.container p{
+.certificate p{
   margin-top: 50px;
   width: 80%;
 }
@@ -254,11 +313,81 @@ li {
 
 .eleCertificate h2{
   margin-top: 50px;
-
+  text-align: center;
 }
 
 .eleCertificateImg img{
   width: 100%;
+}
+
+.hardware{
+  width: 100%;
+  min-width: 1140px;
+  height: 500px;
+  margin-top: 50px;
+  background-color: #314A7F;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.hardware h2{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.hardwareUl {
+  margin-top: 50px;
+}
+
+.hardwareUl li{
+  padding: 15px;
+}
+
+.hardwareUl li div img{
+  width: 100%;
+}
+
+.hardwareUl li div p{
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.courseShow img{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.courseShow h2{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.teaching {
+  width: 100%;
+  min-width: 1140px;
+  height: 450px;
+  margin-top: 50px;
+  background-image: url("~static/electrician/teaching.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  position: relative;
+}
+
+.teaching a{
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  background-color: #FFD403;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 </style>

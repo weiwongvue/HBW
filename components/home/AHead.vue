@@ -28,7 +28,7 @@
         <li class="col"><nuxt-link to="/electrician">特种操作证</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">特种设备作业</nuxt-link></li>
         <li class="col"><nuxt-link to="/education">新闻中心</nuxt-link></li>
-        <li class="col"><nuxt-link to="/education">关于我们</nuxt-link></li>
+        <li class="col"><nuxt-link to="/about">关于我们</nuxt-link></li>
       </ul>
     </div>
   </div>
