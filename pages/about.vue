@@ -2,7 +2,7 @@
   <div>
     <AHead></AHead>
     <BannerAbout></BannerAbout>
-    <CEleStudent></CEleStudent>
+    <CAboutUs></CAboutUs>
 
     <Footer></Footer>
   </div>
@@ -11,14 +11,14 @@
 <script lang="js">
 import AHead from '~/components/home/AHead';
 import BannerAbout from "~/components/about/BannerAbout"
-import CEleStudent from "@/components/electrician/CEleStudent"
+import CAboutUs from "@/components/about/CAboutUs"
 import Footer from '~/components/home/Footer';
 
 
 export default {
   name: 'register',
   components: {
-    AHead, BannerAbout, CEleStudent, Footer
+    AHead, BannerAbout, CAboutUs, Footer
   }
 }
 </script>
