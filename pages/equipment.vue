@@ -1,8 +1,8 @@
 <template>
   <div>
     <AHead></AHead>
-    <BannerAbout></BannerAbout>
-    <CAboutUs></CAboutUs>
+    <BannerEqu></BannerEqu>
+    <COccupation></COccupation>
 
     <Footer></Footer>
   </div>
@@ -10,15 +10,15 @@
 
 <script lang="js">
 import AHead from '~/components/home/AHead';
-import BannerAbout from "~/components/about/BannerAbout"
-import CAboutUs from "@/components/about/CAboutUs"
+import BannerEqu from "~/components/equipment/BannerEqu"
+import COccupation from "@/components/equipment/COccupation"
 import Footer from '~/components/home/Footer';
 
 
 export default {
   name: 'register',
   components: {
-    AHead, BannerAbout, CAboutUs, Footer
+    AHead, BannerEqu, COccupation, Footer
   }
 }
 </script>

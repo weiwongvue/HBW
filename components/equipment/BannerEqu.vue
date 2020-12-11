@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <div class="bannerShow">
-      <a href="javascript:void(0);"><img src="~static/about/contactUs.png" alt="华邦" title="华邦"></a>
+      <a href="javascript:void(0);"><img src="~static/equipment/banner1.jpg" alt="华邦" title="华邦"></a>
     </div>
   </div>
 </template>
@@ -21,12 +21,7 @@ li {
 }
 
 .banner{
-  margin-top: 10px;
   min-width: 1140px;
-}
-
-.bannerShow{
-  position: relative;
 }
 
 .bannerShow img{

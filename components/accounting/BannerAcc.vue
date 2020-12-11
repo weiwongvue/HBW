@@ -21,7 +21,6 @@ li {
 }
 
 .banner{
-  margin-top: 10px;
   min-width: 1140px;
 }
 

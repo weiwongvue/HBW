@@ -62,7 +62,7 @@ li {
 }
 
 .containerHeader{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .row1 {
