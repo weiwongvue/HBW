@@ -9,8 +9,8 @@
             <li class="col"><nuxt-link to="/register">深圳入户</nuxt-link></li>
             <li class="col"><nuxt-link to="/accounting">职业资格证书</nuxt-link></li>
             <li class="col"><nuxt-link to="/engineer">建筑上岗证书</nuxt-link></li>
-            <li class="col"><nuxt-link to="/electrician">特种操作证</nuxt-link></li>
-            <li class="col"><nuxt-link to="/equipment">特种设备作业</nuxt-link></li>
+            <li class="col"><nuxt-link to="/equipment">特种操作证</nuxt-link></li>
+            <li class="col"><nuxt-link to="/electrician">特种设备作业</nuxt-link></li>
             <li class="col"><nuxt-link to="/news">新闻中心</nuxt-link></li>
             <li class="col"><nuxt-link to="/about">关于我们</nuxt-link></li>
           </ul>
@@ -34,7 +34,12 @@
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="server">
+      <a href="javascript:void(0);">
+        <img src="~static/home/server.png" alt="华邦" title="华邦">
+        <span href="javascript:void(0);">在线咨询</span>
+      </a>
     </div>
   </div>
 </template>
@@ -100,6 +105,41 @@ li {
 
 .footerAddress p{
   color: #FFFFFF;
+}
+
+.server a{
+  display: block;
+  width: 150px;
+  height: 180px;
+  padding: 20px;
+  border: 1px solid #314A7F;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+
+.server:hover span{
+  background-color: #314A7F;
+  color: #FFFFFF;
+}
+
+.server img{
+  width: 100%;
+}
+
+.server span{
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #314A7F;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 14px;
+  border: 1px solid #314A7F;
 }
 
 </style>

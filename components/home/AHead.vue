@@ -25,8 +25,8 @@
         <li class="col"><nuxt-link to="/register">深圳入户</nuxt-link></li>
         <li class="col"><nuxt-link to="/accounting">职业资格证书</nuxt-link></li>
         <li class="col"><nuxt-link to="/engineer">建筑上岗证书</nuxt-link></li>
-        <li class="col"><nuxt-link to="/electrician">特种操作证</nuxt-link></li>
-        <li class="col"><nuxt-link to="/equipment">特种设备作业</nuxt-link></li>
+        <li class="col"><nuxt-link to="/equipment">特种操作证</nuxt-link></li>
+        <li class="col"><nuxt-link to="/electrician">特种设备作业</nuxt-link></li>
         <li class="col"><nuxt-link to="/news">新闻中心</nuxt-link></li>
         <li class="col"><nuxt-link to="/about">关于我们</nuxt-link></li>
       </ul>
