@@ -244,7 +244,7 @@
           </li>
           <li class="col-2">
             <div class="rankList">
-              <img src="~static/register/rank1.png" alt="华邦" title="华邦">
+              <img src="~static/register/rank2.png" alt="华邦" title="华邦">
               <h6>宝安入户服务中心</h6>
               <p>SERVICE CENTER</p>
               <a href="javascript:void(0);">获取地址</a>
@@ -252,7 +252,7 @@
           </li>
           <li class="col-2">
             <div class="rankList">
-              <img src="~static/register/rank1.png" alt="华邦" title="华邦">
+              <img src="~static/register/rank3.png" alt="华邦" title="华邦">
               <h6>宝安入户服务中心</h6>
               <p>SERVICE CENTER</p>
               <a href="javascript:void(0);">获取地址</a>
@@ -260,7 +260,7 @@
           </li>
           <li class="col-2">
             <div class="rankList">
-              <img src="~static/register/rank1.png" alt="华邦" title="华邦">
+              <img src="~static/register/rank4.png" alt="华邦" title="华邦">
               <h6>宝安入户服务中心</h6>
               <p>SERVICE CENTER</p>
               <a href="javascript:void(0);">获取地址</a>
@@ -268,7 +268,7 @@
           </li>
           <li class="col-2">
             <div class="rankList">
-              <img src="~static/register/rank1.png" alt="华邦" title="华邦">
+              <img src="~static/register/rank5.png" alt="华邦" title="华邦">
               <h6>宝安入户服务中心</h6>
               <p>SERVICE CENTER</p>
               <a href="javascript:void(0);">获取地址</a>
@@ -276,7 +276,7 @@
           </li>
           <li class="col-2">
             <div class="rankList">
-              <img src="~static/register/rank1.png" alt="华邦" title="华邦">
+              <img src="~static/register/rank6.png" alt="华邦" title="华邦">
               <h6>宝安入户服务中心</h6>
               <p>SERVICE CENTER</p>
               <a href="javascript:void(0);">获取地址</a>
