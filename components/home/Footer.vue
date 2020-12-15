@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="server">
-      <a href="javascript:void(0);">
+      <a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1064985177&amp;site=qq&amp;menu=yes">
         <img src="~static/home/server.png" alt="华邦" title="华邦">
         <span href="javascript:void(0);">在线咨询</span>
       </a>

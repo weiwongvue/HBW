@@ -25,74 +25,74 @@
       <ul class="row">
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+            <img src="~static/home/cooperation1.png" alt="华邦" title="华邦">
             <p>暨南大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
             <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <p>深圳大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation3.png" alt="华邦" title="华邦">
+            <p>湘潭大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation4.png" alt="华邦" title="华邦">
+            <p>江西理工大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation5.png" alt="华邦" title="华邦">
+            <p>广东南方职业学院</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation6.png" alt="华邦" title="华邦">
+            <p>广东第二师范学院</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation7.png" alt="华邦" title="华邦">
+            <p>中央广播电视中等专业学校</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation8.png" alt="华邦" title="华邦">
+            <p>湖南师范大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation9.png" alt="华邦" title="华邦">
+            <p>湖南工商大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation10.png" alt="华邦" title="华邦">
+            <p>西南科技大学</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation11.png" alt="华邦" title="华邦">
+            <p>湖南涉外经济学院</p>
           </div>
         </li>
         <li class="col-3 cooperationLi">
           <div class="cooperationList">
-            <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
-            <p>暨南大学</p>
+            <img src="~static/home/cooperation12.png" alt="华邦" title="华邦">
+            <p>广州航海学院</p>
           </div>
         </li>
       </ul>
@@ -122,7 +122,7 @@
         </div>
       </div>
       <div class="promoteLeft">
-        <img src="~static/home/promote.png" alt="华邦" title="华邦">
+        <img src="~static/home/promote2.png" alt="华邦" title="华邦">
       </div>
     </div>
     <div class="container">
@@ -134,34 +134,34 @@
         </li>
         <li class="col-4 listImgLi">
           <div class="listImg">
-            <img src="~static/home/list1.png" alt="华邦" title="华邦">
+            <img src="~static/home/list2.png" alt="华邦" title="华邦">
           </div>
         </li>
         <li class="col-4 listImgLi">
           <div class="listImg">
-            <img src="~static/home/list1.png" alt="华邦" title="华邦">
+            <img src="~static/home/list3.png" alt="华邦" title="华邦">
           </div>
         </li>
         <li class="col-4 listImgLi">
           <div class="listImg">
-            <img src="~static/home/list1.png" alt="华邦" title="华邦">
+            <img src="~static/home/list4.png" alt="华邦" title="华邦">
           </div>
         </li>
         <li class="col-4 listImgLi">
           <div class="listImg">
-            <img src="~static/home/list1.png" alt="华邦" title="华邦">
+            <img src="~static/home/list5.png" alt="华邦" title="华邦">
           </div>
         </li>
         <li class="col-4 listImgLi">
           <div class="listImg">
-            <img src="~static/home/list1.png" alt="华邦" title="华邦">
+            <img src="~static/home/list6.png" alt="华邦" title="华邦">
           </div>
         </li>
       </ul>
     </div>
     <div class="promote">
       <div class="promoteLeft">
-        <img src="~static/home/promote.png" alt="华邦" title="华邦">
+        <img src="~static/home/promote3.png" alt="华邦" title="华邦">
       </div>
       <div class="promoteRight">
         <div class="promoteContent">
@@ -244,7 +244,7 @@
         </div>
       </div>
       <div class="promoteLeft">
-        <img src="~static/home/promote.png" alt="华邦" title="华邦">
+        <img src="~static/home/promote4.png" alt="华邦" title="华邦">
       </div>
     </div>
   </div>
@@ -258,6 +258,10 @@
 
 a {
   color: #000000;
+}
+
+ul {
+  padding-left: 0;
 }
 
 li {
@@ -290,7 +294,6 @@ li {
   height: 500px;
   background-color: #314a7f;
   float: left;
-  /* padding: 50px 10px 0px 100px; */
   color: #FFFFFF;
   position: relative;
 }
@@ -317,7 +320,7 @@ li {
 }
 
 .cooperationLi {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
   font-size: 14px;
 }
@@ -329,6 +332,10 @@ li {
 
 .cooperationLi img {
   width: 100%;
+}
+
+.cooperationList p{
+  height: 42px;
 }
 
 .telBanner {
@@ -514,4 +521,7 @@ li {
   margin-bottom: 10px;
 }
 
+.promote4 img{
+  height: 450px;
+}
 </style>

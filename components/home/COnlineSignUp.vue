@@ -187,10 +187,10 @@
 </template>
 
 <style scoped>
-/** {*/
-/*  margin: 0 auto;*/
-/*  padding: 0;*/
-/*}*/
+* {
+  margin: 0 auto;
+  padding: 0;
+}
 
 a {
   color: #ffffff;
@@ -261,6 +261,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  margin-top: 30px;
 }
 
 .ad img {
@@ -303,13 +304,37 @@ li {
 .academic {
   width: 100%;
   height: 270px;
-  background-image: url("~static/home/xl1.png");
+  background-image: url("~static/home/xl2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   text-align: center;
   padding-top: 50%;
 }
+
+.academicUl li:first-child .academic{
+  background-image: url("~static/home/xl1.png");
+}
+
+.academicUl li:nth-child(3) .academic{
+  background-image: url("~static/home/xl3.png");
+}
+.academicUl li:nth-child(4) .academic{
+  background-image: url("~static/home/xl4.png");
+}
+.academicUl li:nth-child(5) .academic{
+  background-image: url("~static/home/xl5.png");
+}
+.academicUl li:nth-child(6) .academic{
+  background-image: url("~static/home/xl6.png");
+}
+.academicUl li:nth-child(7) .academic{
+  background-image: url("~static/home/xl7.png");
+}
+.academicUl li:nth-child(8) .academic{
+  background-image: url("~static/home/xl8.png");
+}
+
 
 .academic a {
   color: #FFFFFF;

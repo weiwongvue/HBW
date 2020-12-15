@@ -18,31 +18,31 @@
         </li>
         <li class="col-4">
           <div class="certificates">
-            <img src="~static/education/certificates.png" alt="华邦" title="华邦">
+            <img src="~static/education/certificates2.png" alt="华邦" title="华邦">
             <p>专业报考老师为您筹备个性化升学方案，整理简单易考课程，让您轻松启程！</p>
           </div>
         </li>
         <li class="col-4">
           <div class="certificates">
-            <img src="~static/education/certificates.png" alt="华邦" title="华邦">
+            <img src="~static/education/certificates3.png" alt="华邦" title="华邦">
             <p>专业报考老师为您筹备个性化升学方案，整理简单易考课程，让您轻松启程！</p>
           </div>
         </li>
         <li class="col-4">
           <div class="certificates">
-            <img src="~static/education/certificates.png" alt="华邦" title="华邦">
+            <img src="~static/education/certificates4.png" alt="华邦" title="华邦">
             <p>专业报考老师为您筹备个性化升学方案，整理简单易考课程，让您轻松启程！</p>
           </div>
         </li>
         <li class="col-4">
           <div class="certificates">
-            <img src="~static/education/certificates.png" alt="华邦" title="华邦">
+            <img src="~static/education/certificates5.png" alt="华邦" title="华邦">
             <p>专业报考老师为您筹备个性化升学方案，整理简单易考课程，让您轻松启程！</p>
           </div>
         </li>
         <li class="col-4">
           <div class="certificates">
-            <img src="~static/education/certificates.png" alt="华邦" title="华邦">
+            <img src="~static/education/certificates6.png" alt="华邦" title="华邦">
             <p>专业报考老师为您筹备个性化升学方案，整理简单易考课程，让您轻松启程！</p>
           </div>
         </li>
