@@ -54,14 +54,14 @@
         </li>
         <li class="col-4">
           <div>
-            <img src="~static/accounting/aClass.png" alt="华邦" title="华邦">
+            <img src="~static/accounting/aClass2.png" alt="华邦" title="华邦">
             <h4>校区</h4>
             <p>直击企业财务管理要点</p>
           </div>
         </li>
         <li class="col-4">
           <div>
-            <img src="~static/accounting/aClass.png" alt="华邦" title="华邦">
+            <img src="~static/accounting/aClass3.png" alt="华邦" title="华邦">
             <h4>校区</h4>
             <p>直击企业财务管理要点</p>
           </div>
@@ -91,7 +91,7 @@
         </li>
         <li class="col-3">
           <div>
-            <img src="~static/accounting/teach1.png" alt="华邦" title="华邦">
+            <img src="~static/accounting/teach2.png" alt="华邦" title="华邦">
             <h4>理论讲解课</h4>
             <p>讲解18年专业考证+实操+管理</p>
             <p>教学中积累的精华</p>
@@ -99,7 +99,7 @@
         </li>
         <li class="col-3">
           <div>
-            <img src="~static/accounting/teach1.png" alt="华邦" title="华邦">
+            <img src="~static/accounting/teach3.png" alt="华邦" title="华邦">
             <h4>理论讲解课</h4>
             <p>讲解18年专业考证+实操+管理</p>
             <p>教学中积累的精华</p>
@@ -107,7 +107,7 @@
         </li>
         <li class="col-3">
           <div>
-            <img src="~static/accounting/teach1.png" alt="华邦" title="华邦">
+            <img src="~static/accounting/teach4.png" alt="华邦" title="华邦">
             <h4>理论讲解课</h4>
             <p>讲解18年专业考证+实操+管理</p>
             <p>教学中积累的精华</p>
@@ -146,7 +146,7 @@
           </li>
           <li class="col-3">
             <div>
-              <img src="~static/accounting/brand1.png" alt="华邦" title="华邦">
+              <img src="~static/accounting/brand2.png" alt="华邦" title="华邦">
               <h4>理论讲解课</h4>
               <p>讲解18年专业考证+实操+管理</p>
               <p>教学中积累的精华</p>
@@ -154,7 +154,7 @@
           </li>
           <li class="col-3">
             <div>
-              <img src="~static/accounting/brand1.png" alt="华邦" title="华邦">
+              <img src="~static/accounting/brand3.png" alt="华邦" title="华邦">
               <h4>理论讲解课</h4>
               <p>讲解18年专业考证+实操+管理</p>
               <p>教学中积累的精华</p>
@@ -162,7 +162,7 @@
           </li>
           <li class="col-3">
             <div>
-              <img src="~static/accounting/brand1.png" alt="华邦" title="华邦">
+              <img src="~static/accounting/brand4.png" alt="华邦" title="华邦">
               <h4>理论讲解课</h4>
               <p>讲解18年专业考证+实操+管理</p>
               <p>教学中积累的精华</p>

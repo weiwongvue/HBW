@@ -126,20 +126,20 @@
           </li>
           <li class="col-3">
             <div class="">
-              <img src="~static/electrician/hardware1.png" alt="华邦" title="华邦">
+              <img src="~static/electrician/hardware2.png" alt="华邦" title="华邦">
               <p>教学设备</p>
             </div>
           </li>
           <li class="col-3">
             <div class="">
-              <img src="~static/electrician/hardware1.png" alt="华邦" title="华邦">
+              <img src="~static/electrician/hardware4.png" alt="华邦" title="华邦">
               <p>教学设备</p>
             </div>
           </li>
           <li class="col-3">
             <div class="">
-              <img src="~static/electrician/hardware1.png" alt="华邦" title="华邦">
-              <p>教学设备</p>
+              <img src="~static/electrician/hardware3.png" alt="华邦" title="华邦">
+              <p>往期学员</p>
             </div>
           </li>
         </ul>

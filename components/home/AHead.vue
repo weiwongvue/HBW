@@ -12,10 +12,18 @@
         </div>
         <div class="col-sm-6 col-6">
           <div class="row1_map">
-            <nuxt-link to="/education">华邦课堂</nuxt-link>
-            <nuxt-link to="/education">资源中心</nuxt-link>
-            <nuxt-link to="/education">网站地图</nuxt-link>
-            <nuxt-link to="/education">联系我们</nuxt-link>
+            <a target="_blank" rel="nofollow" href="http://edu.huabedu.com/">
+              华邦课堂
+            </a>
+            <a target="_blank" rel="nofollow" href="http://edu.huabedu.com/">
+              资源中心
+            </a>
+            <a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1064985177&amp;site=qq&amp;menu=yes">
+              网站地图
+            </a>
+            <a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1064985177&amp;site=qq&amp;menu=yes">
+              联系我们
+            </a>
           </div>
         </div>
       </div>
