@@ -270,6 +270,7 @@ li {
 
 .promote {
   min-width: 1140px;
+  height: 550px;
 }
 
 .promoteLeft {
@@ -311,7 +312,9 @@ li {
   margin-bottom: 5px;
 }
 
-.cooperation {}
+.cooperation {
+  height: 831px;
+}
 
 .cooperation h3 {
   font-weight: 700;
@@ -384,7 +387,7 @@ li {
   width: 400px;
   position: absolute;
   right: 150px;
-  left: unset;
+  left: auto;
 }
 
 .promote2 img {

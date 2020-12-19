@@ -244,7 +244,7 @@ li {
 }
 
 .eleInput div:last-child{
-  border: unset;
+  border: none;
 }
 
 .eleInput button{

@@ -107,16 +107,22 @@ li {
   color: #FFFFFF;
 }
 
+.server {
+  width: 150px;
+  height: 180px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
 .server a{
   display: block;
   width: 150px;
   height: 180px;
   padding: 20px;
   border: 1px solid #314A7F;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+
   background-color: #fff;
   border-radius: 0 5px 5px 0;
 }

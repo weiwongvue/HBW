@@ -18,9 +18,9 @@
             <a target="_blank" rel="nofollow" href="http://edu.huabedu.com/">
               资源中心
             </a>
-            <a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1064985177&amp;site=qq&amp;menu=yes">
-              网站地图
-            </a>
+<!--            <a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1064985177&amp;site=qq&amp;menu=yes">-->
+<!--              网站地图-->
+<!--            </a>-->
             <a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1064985177&amp;site=qq&amp;menu=yes">
               联系我们
             </a>

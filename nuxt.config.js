@@ -1,5 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
+  target: 'server',
+
   head: {
     title: '华邦教育',
     meta: [
@@ -15,11 +17,13 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['assets/main.css'
+  css: [
+    'assets/main.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    // { src: "~/plugins/bootstrap.js", ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -37,13 +41,33 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    "@nuxtjs/proxy"
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    proxy: true,
+    prefix: '/api',
+    credentials: true
+  },
+
+  proxy: {
+    '/api': {
+      target: 'http://8.210.230.112:9097',
+      // target:  'http://127.0.0.1:9097',
+      pathRewrite: {
+        '^/api/': '',
+        changeOrigin: true
+      }
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extractCSS: {allChunks: true}
+    extractCSS: {allChunks: true},
+  },
+
+  router:{
+    mode:'history'
   }
 }
