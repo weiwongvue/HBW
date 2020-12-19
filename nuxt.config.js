@@ -24,6 +24,7 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     // { src: "~/plugins/bootstrap.js", ssr: false }
+    '~plugins/test.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -53,8 +54,8 @@ export default {
 
   proxy: {
     '/api': {
-      target: 'http://8.210.230.112:9097',
-      // target:  'http://127.0.0.1:9097',
+      // target: 'http://8.210.230.112:9097',
+      target:  'http://127.0.0.1:9097',
       pathRewrite: {
         '^/api/': '',
         changeOrigin: true

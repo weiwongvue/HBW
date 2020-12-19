@@ -1,5 +1,5 @@
-<template>
-  <div class="eHBNews">
+<template xmlns="">
+  <div class="eHBNews" v-if="false">
     <div class="container HBNews">
       <div class="row">
         <div class="col-12">
@@ -112,6 +112,22 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'news',
+
+  methods:{
+
+  },
+
+  mounted() {
+    // console.log($nuxt.isOffline)
+  }
+}
+
+
+</script>
 
 <style scoped>
 /** {*/
