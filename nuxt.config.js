@@ -18,7 +18,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    'assets/main.css',
+    'assets/styles/main.scss',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -65,10 +65,15 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extractCSS: {allChunks: true},
+    // extractCSS: {allChunks: true},
   },
 
   router:{
-    mode:'history'
+    mode:'history' // default: history
+  },
+
+  server: {
+    port: 3003, // default: 3000
+    host: '0.0.0.0' // default: localhost
   }
 }
