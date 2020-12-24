@@ -238,9 +238,10 @@ li {
 .eleInput input {
   border: 0;
   height: 46px;
-  width: 208px;
+  width: 230px;
   padding: 5px;
   font-size: 14px;
+  outline: none;
 }
 
 .eleInput div:last-child{

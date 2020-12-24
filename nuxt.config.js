@@ -54,8 +54,8 @@ export default {
 
   proxy: {
     '/api': {
-      // target: 'http://8.210.230.112:9097',
-      target:  'http://127.0.0.1:9097',
+      // target: 'http://8.210.230.112:9093',
+      target:  'http://localhost:9093',
       pathRewrite: {
         '^/api/': '',
         changeOrigin: true

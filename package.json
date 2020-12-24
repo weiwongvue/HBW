@@ -9,10 +9,7 @@
     "generate": "nuxt-ts generate"
   },
   "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "3002"
-    }
+
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",

@@ -29,7 +29,7 @@
         </div>
         <div class="col-12">
           <div class="formName formCommit">
-            <button type="button" @click="addUser">提交留言</button>
+            <button type="button" @click="addUserForm(user)">提交留言</button>
           </div>
         </div>
       </div>
@@ -38,6 +38,8 @@
 </template>
 
 <script>
+// import {addUser} from '~/api/home/home.js'
+
 export default {
   name: 'userForm',
 
@@ -54,27 +56,27 @@ export default {
   },
 
   methods:{
-    addUser(){
-      console.log(this.user)
-
-      let ret = /^1[3456789]\d{9}$/;
-      if (!ret.test(this.user.mobile)) {
-        alert('请输入正确的手机号');
-        return;
-      }
-      this.$axios.post("/ajjUser/addUser", {
-        name: this.user.name,
-        mobile: this.user.mobile
-      }).then(res => {
-        console.log(res)
-        if (200 == res.data.status) {
-          alert('提交成功');
-          this.user = '';
-        } else{
-          alert('提交失败 请稍后重试!');
-        }
-      })
-
+    // addUser(){
+    //   let ret = /^1[3456789]\d{9}$/;
+    //   if (!ret.test(this.user.mobile)) {
+    //     alert('请输入正确的手机号');
+    //     return;
+    //   }
+    //   this.$axios.post("/ajjUser/addUser", {
+    //     name: this.user.name,
+    //     mobile: this.user.mobile
+    //   }).then(res => {
+    //     console.log(res)
+    //     if (200 == res.data.status) {
+    //       alert('提交成功');
+    //       this.user = '';
+    //     } else{
+    //       alert('提交失败 请稍后重试!');
+    //     }
+    //   })
+    // }
+    addUserForm(user){
+      addUser(user);
     }
   }
 }

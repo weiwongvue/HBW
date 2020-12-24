@@ -42,7 +42,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 * {
   margin: 0 auto;
   padding: 0;
@@ -145,6 +145,12 @@ li {
   width: 100%;
   height: 40px;
   line-height: 40px;
+  border-radius: 3px;
+  &:hover{
+    background-color: #326ec0;
+    transition: all 0.4s;
+    color: #FFFFFF;
+  }
 }
 
 </style>
