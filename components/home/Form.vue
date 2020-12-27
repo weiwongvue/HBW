@@ -4,27 +4,27 @@
       <div class="row">
         <div class="col-6">
           <div class="formName">
-            <input v-model="user.name" type="text" id="formName" value="" placeholder="请输入您的姓名" />
+            <input v-model="user.name" type="text" id="formName" value="" placeholder="请输入您的姓名"/>
           </div>
         </div>
         <div class="col-6">
           <div class="formName">
-            <input v-model="user.mobile" type="text" id="formContact" value="" placeholder="请输入您的联系方式" />
+            <input v-model="user.mobile" type="text" id="formContact" value="" placeholder="请输入您的联系方式"/>
           </div>
         </div>
         <div class="col-6">
           <div class="formName">
-            <input v-model="user.course" type="text" id="formClass" value="" placeholder="请输入您想要培训的课程" />
+            <input v-model="user.course" type="text" id="formClass" value="" placeholder="请输入您想要培训的课程"/>
           </div>
         </div>
         <div class="col-6">
           <div class="formName">
-            <input v-model="user.time" type="text" id="formTime" value="" placeholder="请输入您理想的上课时间" />
+            <input v-model="user.time" type="text" id="formTime" value="" placeholder="请输入您理想的上课时间"/>
           </div>
         </div>
         <div class="col-12">
           <div class="formName formQuestion">
-            <input v-model="user.issue" type="text" id="formIssue" value="" placeholder="请输入您的问题或建议" />
+            <input v-model="user.issue" type="text" id="formIssue" value="" placeholder="请输入您的问题或建议"/>
           </div>
         </div>
         <div class="col-12">
@@ -38,14 +38,14 @@
 </template>
 
 <script>
-// import {addUser} from '~/api/home/home.js'
+import {addUser} from '~/api/home/home.js'
 
 export default {
   name: 'userForm',
 
-  data(){
-    return{
-      user:{
+  data() {
+    return {
+      user: {
         name: '',
         mobile: '',
         course: '',
@@ -55,28 +55,22 @@ export default {
     }
   },
 
-  methods:{
-    // addUser(){
-    //   let ret = /^1[3456789]\d{9}$/;
-    //   if (!ret.test(this.user.mobile)) {
-    //     alert('请输入正确的手机号');
-    //     return;
-    //   }
-    //   this.$axios.post("/ajjUser/addUser", {
-    //     name: this.user.name,
-    //     mobile: this.user.mobile
-    //   }).then(res => {
-    //     console.log(res)
-    //     if (200 == res.data.status) {
-    //       alert('提交成功');
-    //       this.user = '';
-    //     } else{
-    //       alert('提交失败 请稍后重试!');
-    //     }
-    //   })
-    // }
-    addUserForm(user){
-      addUser(user);
+  methods: {
+    async addUserForm(user) {
+      let ret = /^1[3456789]\d{9}$/;
+      if (!ret.test(user.mobile)) {
+        alert('请输入正确的手机号');
+        return;
+      }
+      const {data} = await addUser(user)
+      console.log(data)
+      if (200 === data.status) {
+        alert('提交成功');
+        this.user = '';
+      } else {
+        alert('提交失败 请稍后重试!');
+      }
+
     }
   }
 }
@@ -140,15 +134,15 @@ li {
   color: #FFFFFF;
 }
 
-.formQuestion input{
+.formQuestion input {
   height: 160px;
 }
 
-.formCommit{
+.formCommit {
   text-align: center;
 }
 
-.formCommit button{
+.formCommit button {
   height: 35px;
   line-height: 24px;
   padding: 5px 20px;

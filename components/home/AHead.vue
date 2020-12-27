@@ -53,13 +53,13 @@ a {
   color: #000000;
 }
 
-a:visited {
-  text-decoration: none;
-}
+//a:visited {
+//  text-decoration: none;
+//}
 
-a:hover {
-  text-decoration: none;
-}
+//a:hover {
+//  text-decoration: none;
+//}
 
 li {
   list-style: none;
@@ -138,6 +138,7 @@ li {
 
 .nav_head {
   text-align: center;
+  margin-top: 10px;
 }
 
 .nav_head a {

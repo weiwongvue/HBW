@@ -55,7 +55,7 @@ export default {
   proxy: {
     '/api': {
       // target: 'http://8.210.230.112:9093',
-      target:  'http://localhost:9093',
+      target:  'http://127.0.0.1:9093',
       pathRewrite: {
         '^/api/': '',
         changeOrigin: true
@@ -72,8 +72,8 @@ export default {
     mode:'history' // default: history
   },
 
-  server: {
-    port: 3003, // default: 3000
-    host: '0.0.0.0' // default: localhost
-  }
+  // server: {
+  //   port: 3003, // default: 3000
+  //   host: '0.0.0.0' // default: localhost
+  // }
 }

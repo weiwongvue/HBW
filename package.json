@@ -9,11 +9,16 @@
     "generate": "nuxt-ts generate"
   },
   "config": {
-
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3003"
+    }
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/axios": "^5.12.4",
+    "@nuxtjs/proxy": "^2.1.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.21.1",
     "core-js": "^3.8.1",

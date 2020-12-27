@@ -9,34 +9,9 @@
         </div>
       </div>
       <ul class="row newsTypeUl">
-        <li class="col-2">
+        <li v-for="(item, index) of titleArr" class="col-2">
           <div class="newsType">
-            <a href="javascript:void(0);">学历教育</a>
-          </div>
-        </li>
-        <li class="col-2">
-          <div class="newsType">
-            <a href="javascript:void(0);">学历教育</a>
-          </div>
-        </li>
-        <li class="col-2">
-          <div class="newsType">
-            <a href="javascript:void(0);">学历教育</a>
-          </div>
-        </li>
-        <li class="col-2">
-          <div class="newsType">
-            <a href="javascript:void(0);">学历教育</a>
-          </div>
-        </li>
-        <li class="col-2">
-          <div class="newsType">
-            <a href="javascript:void(0);">学历教育</a>
-          </div>
-        </li>
-        <li class="col-2">
-          <div class="newsType">
-            <a href="javascript:void(0);">学历教育</a>
+            <a @click="changeNewsType(index+1)" :class="{selected: page.typeId === index+1}" href="javascript:void(0);">{{ item }}</a>
           </div>
         </li>
       </ul>
@@ -56,77 +31,33 @@
             </div>
           </div>
           <ul class="HBNewsList">
-            <li class="HBNewsListLi">
-              <div class="HBNewsList1">
-                <img src="~static/home/hbimg4.png" alt="华邦" title="华邦">
-              </div>
-              <div class="HBNewsList2">
-                <h5>标题标题标题标题标题标题标题标题</h5>
-                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容.......</p>
-                <span>发布时间：2020-11-6</span>
-              </div>
-            </li>
-            <li class="HBNewsListLi">
-              <div class="HBNewsList1">
-                <img src="~static/home/hbimg4.png" alt="华邦" title="华邦">
-              </div>
-              <div class="HBNewsList2">
-                <h5>标题标题标题标题标题标题标题标题</h5>
-                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容.......</p>
-                <span>发布时间：2020-11-6</span>
-              </div>
-            </li>
-            <li class="HBNewsListLi">
-              <div class="HBNewsList1">
-                <img src="~static/home/hbimg4.png" alt="华邦" title="华邦">
-              </div>
-              <div class="HBNewsList2">
-                <h5>标题标题标题标题标题标题标题标题</h5>
-                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容.......</p>
-                <span>发布时间：2020-11-6</span>
-              </div>
-            </li>
-            <li class="HBNewsListLi">
-              <div class="HBNewsList1">
-                <img src="~static/home/hbimg4.png" alt="华邦" title="华邦">
-              </div>
-              <div class="HBNewsList2">
-                <h5>标题标题标题标题标题标题标题标题</h5>
-                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容.......</p>
-                <span>发布时间：2020-11-6</span>
-              </div>
-            </li>
-            <li class="HBNewsListLi">
-              <div class="HBNewsList1">
-                <img src="~static/home/hbimg4.png" alt="华邦" title="华邦">
-              </div>
-              <div class="HBNewsList2">
-                <h5>标题标题标题标题标题标题标题标题</h5>
-                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容.......</p>
-                <span>发布时间：2020-11-6</span>
-              </div>
-            </li>
-            <li class="HBNewsListLi">
-              <div class="HBNewsList1">
-                <img src="~static/home/hbimg4.png" alt="华邦" title="华邦">
-              </div>
-              <div class="HBNewsList2">
-                <h5>标题标题标题标题标题标题标题标题</h5>
-                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容.......</p>
-                <span>发布时间：2020-11-6</span>
-              </div>
+            <li class="HBNewsListLi" v-for="item of news">
+              <nuxt-link class="" :to="{path:'/news/detail',query:{id:item.id}}">
+                <div class="HBNewsList1">
+                  <img src="~static/home/hbimg4.png" alt="华邦" title="华邦">
+                </div>
+                <div class="HBNewsList2">
+                  <h5>{{ item.title }}</h5>
+                  <p>{{ item.content }}</p>
+                  <span>发布时间：{{ item.createTime }}</span>
+                </div>
+              </nuxt-link>
             </li>
           </ul>
           <div class="HBNewsListIndex">
-            <a href="javascript:void(0);">1</a>
-            <a href="javascript:void(0);">2</a>
-            <a href="javascript:void(0);">3</a>
-            <a href="javascript:void(0);">下一页</a>
-            <span>共3页</span>
+            <a @click="changePage('first',page.pageNum)" href="javascript:void(0);">首页</a>
+            <a @click="changePage('prev',page.pageNum)" href="javascript:void(0);">上一页</a>
+            <a v-for="item of page.navigatepageNums" @click="changePage('navigate',item)"
+               :class="{pageNum: item===page.pageNum}"
+               href="javascript:void(0);">{{ item }}</a>
+            <a @click="changePage('next',page.pageNum,page.pages)"
+               href="javascript:void(0);">下一页</a>
+            <a @click="changePage('last',page.pageNum,page.pages)" href="javascript:void(0);">尾页</a>
+            <span>共{{ page.pages }}页</span>
             <span>到第</span>
-            <input type="text" class="page" name="" id="" value="" />
+            <input v-model="goTo" type="text" class="page" name="" id="" value=""/>
             <span>页</span>
-            <button type="button">确定</button>
+            <button @click="changePage('goTo',page.pageNum,page.pages,goTo)" type="button">确定</button>
           </div>
         </div>
       </div>
@@ -134,7 +65,96 @@
   </div>
 </template>
 
-<style scoped>
+<script>
+import {getNewsList, firstPage, lastPage, prevPage, nextPage, goToPage, toPage} from '~/api/news/news.js'
+import {dateFormat} from "~/service/dateFormat";
+
+export default {
+  name: 'news',
+  data() {
+    return {
+      news: [],
+      page: {
+        typeId: 1,
+        pageNum: 1,
+        pageSize: '8',
+      },
+      goTo: '',
+      titleArr: ['学历教育','深圳入户','会计证书','建筑上岗证书','特种操作证','特种设备作业',],
+    }
+  },
+
+  methods: {
+    changeNewsType(type) {
+      this.page.typeId = type;
+      this.getNewsList();
+    },
+
+    changePage(pageName, pageNum, pages, goTo) {
+      if ('first' === pageName) {
+        this.page.pageNum = firstPage(pageNum)
+      } else if ('last' === pageName) {
+        this.page.pageNum = lastPage(pageNum, pages)
+      } else if ('prev' === pageName) {
+        this.page.pageNum = prevPage(pageNum)
+      } else if ('next' === pageName) {
+        this.page.pageNum = nextPage(pageNum, pages)
+      } else if ('goTo' === pageName) {
+        this.page.pageNum = goToPage(pageNum, pages, goTo)
+      } else if ('navigate' === pageName) {
+        this.page.pageNum = toPage(pageNum)
+      }
+      window.scrollTo(0, 0);
+      this.getNewsList();
+
+    },
+
+    // 新闻列表数据
+    getNewsList() {
+      const p = getNewsList(this.page);
+      p.then(res => {
+        console.log(res);
+        let {data, status} = res.data;
+        if (200 === status) {
+          for (let index in data.page) {
+            data.page[index].createTime = dateFormat('YYYY-mm-dd HH:MM:SS', new Date(data.page[index].createTime));
+          }
+          let navNums = data.PageInfo.navigatepageNums;
+          if (this.page.pageNum > 3) {
+            for (let index in navNums) {
+              if (navNums[0] <= 3 || navNums[0] + 1 < this.page.pageNum) {
+                navNums.shift();
+              }
+            }
+          } else {
+            for (let index in navNums) {
+              if (navNums[navNums.length - 1] > 5) {
+                navNums.pop();
+              }
+            }
+          }
+
+          // 赋值新闻数据
+          data.PageInfo.typeId = this.page.typeId;
+          this.page = data.PageInfo;
+
+          this.news = data.page;
+        }
+      }).catch(err => {
+        // 错误信息
+        console.log(err);
+      })
+    }
+  },
+
+  created() {
+    // 创建时加载
+    this.getNewsList();
+  }
+}
+</script>
+
+<style lang="scss" scoped>
 * {
   margin: 0 auto;
   padding: 0;
@@ -142,26 +162,27 @@
 
 a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 li {
   list-style: none;
 }
 
-.newsTitle h2{
+.newsTitle h2 {
   text-align: center;
   margin-top: 50px;
 }
 
-.newsTypeUl{
+.newsTypeUl {
   margin-top: 40px;
 }
 
-.newsTypeUl li{
+.newsTypeUl li {
   padding: 10px;
 }
 
-.newsType a{
+.newsType a {
   display: block;
   width: 150px;
   height: 40px;
@@ -173,9 +194,16 @@ li {
   border: 1px solid #D3D3D3;
 }
 
-.newsTypeUl li:first-child a{
-  background-color: #314A7F;
-  color: #FFFFFF;
+.newsTypeUl{
+  .selected{
+    background-color: #314A7F;
+    color: #FFFFFF;
+  }
+
+  a:hover{
+    background-color: #314A7F;
+    color: #FFFFFF;
+  }
 
 }
 
@@ -239,13 +267,18 @@ li {
   position: relative;
 }
 
-.HBNewsList {}
+.HBNewsList {
+}
 
 .HBNewsListLi {
   margin-top: 30px;
   width: 100%;
   height: 190px;
   border-bottom: 1px solid #DFDFDF;
+
+  a {
+    color: #000000;
+  }
 }
 
 .HBNewsList1 {
@@ -283,32 +316,52 @@ li {
 .HBNewsListIndex {
   text-align: center;
   margin: 30px 0;
+
+  * {
+    margin-right: 10px;
+    color: #010000;
+    font-size: 14px;
+  }
+
+  input {
+    padding: 5px;
+  }
+
+  .pageNum {
+    background-color: #314A7F;
+    color: #FFFFFF;
+  }
+
+  a {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 15px;
+    border: 1px solid #DFDFDF;
+
+    &:hover {
+      background-color: #314A7F;
+      color: #FFFFFF;
+    }
+  }
+
+  .page {
+    height: 35px;
+    width: 39px;
+    border: 1px solid #DFDFDF;
+  }
+
+  button {
+    height: 35px;
+    padding: 5px 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #DFDFDF;
+
+    &:hover {
+      background-color: #314A7F;
+      color: #FFFFFF;
+    }
+  }
 }
 
-.HBNewsListIndex a {
-  display: inline-block;
-  height: 35px;
-  line-height: 25px;
-  padding: 5px 15px;
-  border: 1px solid #DFDFDF;
-}
-
-.HBNewsListIndex * {
-  margin-right: 10px;
-  color: #010000;
-  font-size: 14px;
-}
-
-.HBNewsListIndex .page {
-  height: 35px;
-  width: 39px;
-  border: 1px solid #DFDFDF;
-}
-
-.HBNewsListIndex button {
-  height: 35px;
-  padding: 5px 15px;
-  background-color: #FFFFFF;
-  border: 1px solid #DFDFDF;
-}
 </style>
