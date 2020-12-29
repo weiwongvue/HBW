@@ -9,6 +9,15 @@ export function getNewsList(params) {
   });
 }
 
+// 获取新闻详情(id)
+export function getNews(params){
+  return request({
+    method: 'post',
+    url: '/ajjNews/getNews',
+    data: params
+  });
+}
+
 // 分页方法
 export function firstPage(pageNum) {
   if (pageNum !== 1) {

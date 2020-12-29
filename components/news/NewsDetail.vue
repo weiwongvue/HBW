@@ -4,17 +4,17 @@
       <div class="row newsTitle">
         <div class="col-12">
           <div class="">
-            <h2>标题标题标题标题</h2>
+            <h2>{{ news.title }}</h2>
           </div>
         </div>
         <div class="col-4">
-          <span>小编：华小邦</span>
+          <span>小编：{{ news.author }}</span>
         </div>
         <div class="col-4">
-          <span>浏览次数：500次</span>
+          <span>浏览次数：{{ news.clickTimes }}次</span>
         </div>
         <div class="col-4">
-          <span>发布时间：2020-11-20</span>
+          <span>发布时间：{{ news.createTime }}</span>
         </div>
       </div>
     </div>
@@ -22,11 +22,9 @@
       <div class="row">
         <div class="col-12">
           <div class="newsContent">
-            <p>
-              内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-            <img src="~static/about/contactUs.png" alt="华邦" title="华邦">
-            <p>
-              内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+           <p v-for="item of news.content">
+             {{item}}
+           </p>
           </div>
         </div>
       </div>
@@ -39,6 +37,41 @@
     </div>
   </div>
 </template>
+
+<script>
+import {getNews} from "~/api/news/news";
+import {dateFormat} from "~/service/dateFormat";
+
+export default {
+  name: 'newDetail',
+  data(){
+    return {
+      news: {}
+    }
+  },
+
+  methods:{
+    getNews(){
+      const p = getNews({id: this.$route.query.id});
+      p.then(res => {
+        console.log(res)
+        let {data, status} = res.data;
+        if (200 === status) {
+          this.news = data;
+          this.news.createTime = dateFormat('YYYY-mm-dd HH:MM:SS', new Date(this.news.createTime));
+          this.news.content = this.news.content.split('  ');
+        }else {
+          alert("加载新闻失败 请稍后再试");
+        }
+      })
+    }
+  },
+
+  created() {
+    this.getNews();
+  }
+}
+</script>
 
 <style scoped>
 * {

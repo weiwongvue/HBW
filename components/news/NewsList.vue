@@ -171,7 +171,6 @@ li {
 
 .newsTitle h2 {
   text-align: center;
-  margin-top: 50px;
 }
 
 .newsTypeUl {
