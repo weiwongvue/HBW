@@ -4,7 +4,7 @@ import axios from "axios";
 const service = axios.create({
   baseURL: '/api',
   timeout: 5000,
-  headers: {'X-Custom-Header': 'foobar'}
+  // headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
 });
 
 // 添加请求拦截器

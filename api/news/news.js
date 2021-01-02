@@ -1,4 +1,5 @@
 import request from "~/service/request";
+import axios from "axios";
 
 // 获取新闻列表
 export function getNewsList(params) {
@@ -9,11 +10,19 @@ export function getNewsList(params) {
   });
 }
 
-// 获取新闻详情(id)
+// 获取新闻详情{id}
 export function getNews(params){
   return request({
     method: 'post',
     url: '/ajjNews/getNews',
+    data: params
+  });
+}
+
+export function prevAndNext(params) {
+  return request({
+    method: 'post',
+    url: '/ajjNews/getPrevAndNext',
     data: params
   });
 }

@@ -54,7 +54,7 @@ export default {
 
   proxy: {
     '/api': {
-      // target: 'http://8.210.230.112:9093',
+      // target: 'http://120.79.148.207:9093',
       target:  'http://127.0.0.1:9093',
       pathRewrite: {
         '^/api/': '',
@@ -65,7 +65,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    // extractCSS: {allChunks: true},
+    extractCSS: {allChunks: true},
   },
 
   router:{

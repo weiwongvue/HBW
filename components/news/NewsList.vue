@@ -107,6 +107,8 @@ export default {
       window.scrollTo(0, 0);
       this.getNewsList();
 
+
+
     },
 
     // 新闻列表数据
