@@ -190,19 +190,19 @@
           <a class="caseButton" href="javascript:void(0);">学历教育</a>
         </li>
         <li class="col-2">
-          <a class="caseButton" href="javascript:void(0);">学历教育</a>
+          <a class="caseButton" href="javascript:void(0);">深圳入户</a>
         </li>
         <li class="col-2">
-          <a class="caseButton" href="javascript:void(0);">学历教育</a>
+          <a class="caseButton" href="javascript:void(0);">职业资格证书</a>
         </li>
         <li class="col-2">
-          <a class="caseButton" href="javascript:void(0);">学历教育</a>
+          <a class="caseButton" href="javascript:void(0);">建筑上岗证书</a>
         </li>
         <li class="col-2">
-          <a class="caseButton" href="javascript:void(0);">学历教育</a>
+          <a class="caseButton" href="javascript:void(0);">特种操作证</a>
         </li>
         <li class="col-2">
-          <a class="caseButton" href="javascript:void(0);">学历教育</a>
+          <a class="caseButton" href="javascript:void(0);">特种设备作业</a>
         </li>
       </ul>
       <div class="row">
@@ -427,6 +427,10 @@ li {
   text-align: center;
   /* color: #FFFFFF; */
   border: 1px solid #D3D3D3;
+}
+
+.caseButtonUl{
+  margin-top: 30px;
 }
 
 .caseButtonUl li:nth-child(1) .caseButton {
