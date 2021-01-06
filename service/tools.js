@@ -39,7 +39,7 @@ let tools = {
             target = parseInt(json[key]);
           }
 
-          speed = (target - begin) * 0.2;
+          speed = (target - begin) * 0.08;
           speed = (target > begin) ? Math.ceil(speed) : Math.floor(speed);
 
           if (key === 'opacity') {
