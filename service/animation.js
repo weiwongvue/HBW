@@ -4,7 +4,6 @@ import tools from "~/service/tools";
 export function move() {
   // 获取元素对象
   let banner = document.getElementById('banner');
-  console.log(banner.firstChild)
 
   // 定义定时器id
   let intervalId = null, begin = 0, step = 50, target = 600;
@@ -15,7 +14,6 @@ export function move() {
 
     // 设置定时器
     intervalId = setInterval(() => {
-      console.log(1);
 
       // 当到达目标时 清除定时器
       if (begin >= target) {
@@ -38,7 +36,6 @@ export function linearAnimation(boxId, btnId, step, target) {
   // 获取元素对象
   let banner = tools.ele(boxId)
   // let banner = document.getElementById(boxId);
-  console.log(banner.firstChild)
 
   // 定义定时器id
   let intervalId = null, begin = 0;
@@ -51,7 +48,6 @@ export function linearAnimation(boxId, btnId, step, target) {
 
     // 设置定时器
     intervalId = setInterval(() => {
-      console.log(2);
 
       // 当到达目标时 清除定时器
       if (begin >= target) {
@@ -86,17 +82,15 @@ export function slowAnimation() {
         begin = target;
         clearInterval(intervalId);
       }
-      console.log(1)
       ele.style.marginLeft = '-' + begin + 'px';
     }, 10)
   })
 }
 
 // 轮播
-export function loop(loopId) {
+export function loop(loopId, loopTime) {
 
   // 获取对象
-  banner
   let banner = tools.ele('banner');
   let loop = tools.ele(loopId);
   let loopContent = loop.children;
@@ -124,7 +118,7 @@ export function loop(loopId) {
     // }
 
     for (let i = 1; i < loopContent.length; i++) {
-      if (num !== i){
+      if (num !== i) {
         loopContent[i].style.left = scrollWidth + 'px';
       }
     }
@@ -146,28 +140,28 @@ export function loop(loopId) {
   })
 
   // 设定轮播
-  let timerId = setInterval(autoPlay,3000)
+  let timerId = setInterval(autoPlay, loopTime)
 
   // 鼠标进入事件
-  banner.addEventListener('mouseover',()=>{
+  banner.addEventListener('mouseover', () => {
     clearInterval(timerId);
   })
   // 鼠标移出事件
-  banner.addEventListener('mouseout',()=>{
-    timerId = setInterval(autoPlay,3000)
+  banner.addEventListener('mouseout', () => {
+    timerId = setInterval(autoPlay, loopTime)
   })
 
   // 鼠标悬浮切换
-  for (let i = 0; i < controlBtn.children.length; i++){
+  for (let i = 0; i < controlBtn.children.length; i++) {
     let btnLi = controlBtn.children[i];
-    ((index)=>{
-      btnLi.addEventListener('mouseover',()=>{
+    ((index) => {
+      btnLi.addEventListener('mouseover', () => {
         clearInterval(timerId)
 
         if (index > num) {
           tools.buffer(loopContent[num], {left: -scrollWidth});
           loopContent[index].style.left = scrollWidth + 'px';
-        } else if (index < num){
+        } else if (index < num) {
           tools.buffer(loopContent[num], {left: scrollWidth});
           loopContent[index].style.left = -scrollWidth + 'px';
         }
@@ -177,20 +171,17 @@ export function loop(loopId) {
         changeIndex();
       })
 
-      btnLi.addEventListener('mouseout',()=>{
-        timerId = setInterval(autoPlay,3000)
+      btnLi.addEventListener('mouseout', () => {
+        timerId = setInterval(autoPlay, loopTime)
       })
 
-      })(i)
+    })(i)
   }
 
 
-
-
-
   // 改变指针样式
-  function changeIndex(){
-    for (let i = 0; i < controlBtn.children.length; i++){
+  function changeIndex() {
+    for (let i = 0; i < controlBtn.children.length; i++) {
       controlBtn.children[i].className = 'col';
     }
 
@@ -199,7 +190,7 @@ export function loop(loopId) {
   }
 
   // autoPlay 下一张
-  function autoPlay(){
+  function autoPlay() {
     tools.buffer(loopContent[num], {left: -scrollWidth});
 
     num++;
@@ -215,7 +206,7 @@ export function loop(loopId) {
   }
 
   // 上一张
-  function prev(){
+  function prev() {
     tools.buffer(loopContent[num], {left: scrollWidth});
 
     num--;
@@ -228,6 +219,103 @@ export function loop(loopId) {
 
     changeIndex();
   }
+}
 
+export function loop2(loop2Id, loopTime) {
+
+  let rotation2 = tools.ele('rotation2')
+  let loop = tools.ele(loop2Id);
+
+  let prevFont2 = tools.ele('prevFont2');
+  let nextFont2 = tools.ele('nextFont2');
+  let loopIndex2 = tools.ele('loopIndex2').children;
+  let loopArr = loop.children;
+
+  let numIndex = 1;
+
+  changeIndexStyle();
+
+  let timer = setInterval(() => {
+    autoPlay2();
+  }, loopTime)
+
+  rotation2.addEventListener('mouseover', () => {
+    clearInterval(timer);
+  })
+
+  rotation2.addEventListener('mouseout', () => {
+    timer = setInterval(() => {
+      autoPlay2();
+    }, loopTime)
+  })
+
+
+  // 上一页
+  prevFont2.addEventListener('click', () => {
+    let loop2 = tools.ele(loop2Id);
+
+    loop2.insertBefore(loop2.children[loop2.children.length - 1], loop2.children[0]);
+    loop2.children[0].style.marginLeft = '-340px';
+
+    tools.buffer(loop2.children[0], {marginLeft: 0}, () => {})
+
+    numIndex--;
+    if (numIndex < 0) {
+      numIndex = loop2.children.length - 1;
+    }
+
+    changeIndexStyle();
+
+  })
+
+  // 下一页
+  nextFont2.addEventListener('click', () => {
+    autoPlay2();
+  })
+
+  function autoPlay2() {
+
+    tools.buffer(loopArr[0], {marginLeft: -340}, () => {
+      let loopChild = loopArr[0];
+      loopArr[0].remove();
+      loop.append(loopChild);
+      loopArr[5].style.marginLeft = '';
+
+      numIndex++;
+      if (numIndex >= loop.children.length) {
+        numIndex = 0;
+      }
+
+      changeIndexStyle();
+    });
+
+  }
+
+  // loopIndex2.forEach((current, index) => {
+  //   ((index) => {
+  //     current.addEventListener('mouseover', () => {
+  //       if (index > numIndex) {
+  //
+  //
+  //         tools.buffer(loop.children[index], {marginLeft: 0}, () => {
+  //         });
+  //
+  //       } else if (index < numIndex) {
+  //
+  //       }
+  //
+  //     })
+  //
+  //   })(index)
+  //
+  // })
+
+  function changeIndexStyle() {
+    loopIndex2.forEach((currentValue) => {
+      currentValue.className = '';
+    })
+
+    loopIndex2[numIndex].className = 'currentIndex2'
+  }
 
 }

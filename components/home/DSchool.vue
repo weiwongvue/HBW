@@ -205,24 +205,39 @@
           <a class="caseButton" href="javascript:void(0);">特种设备作业</a>
         </li>
       </ul>
-      <div class="row">
-        <div class="col-12 caseLoopBox">
-          <div class="caseLoop">
-            <div>
-              <img src="~static/home/promote.png" alt="华邦" title="华邦">
-            </div>
-            <div>
-              <img src="~static/home/promote.png" alt="华邦" title="华邦">
-            </div>
-            <div>
-              <img src="~static/home/promote.png" alt="华邦" title="华邦">
+      <div class="row" id="rotation2">
+        <div class="col-12">
+          <div class="caseLoopBox">
+            <div id="caseLoop2" class="caseLoop">
+              <div>
+                <img src="~static/home/promote.png" alt="华邦" title="华邦">
+              </div>
+              <div>
+                <img src="~static/home/cooperation1.png" alt="华邦" title="华邦">
+              </div>
+              <div>
+                <img src="~static/home/cooperation2.png" alt="华邦" title="华邦">
+              </div>
+              <div>
+                <img src="~static/home/cooperation3.png" alt="华邦" title="华邦">
+              </div>
+              <div>
+                <img src="~static/home/cooperation4.png" alt="华邦" title="华邦">
+              </div>
+              <div>
+                <img src="~static/home/cooperation5.png" alt="华邦" title="华邦">
+              </div>
             </div>
           </div>
-          <span class="iconfont prevFont">&#xe685;</span>
-          <span class="iconfont nextFont">&#xe687;</span>
+          <span id="prevFont2" class="iconfont prevFont">&#xe685;</span>
+          <span id="nextFont2" class="iconfont nextFont">&#xe687;</span>
         </div>
         <div class="col-12">
-          <div class="loopIndex">
+          <div id="loopIndex2" class="loopIndex">
+            <a href="javascript:void(0);"></a>
+            <a href="javascript:void(0);"></a>
+            <a href="javascript:void(0);"></a>
+            <a href="javascript:void(0);"></a>
             <a href="javascript:void(0);"></a>
             <a href="javascript:void(0);"></a>
           </div>
@@ -238,7 +253,8 @@
           <p>02</p>
           <p>多样化的培训方式，根据学员实际情况为不同的学员制定合适的培训方案，先进 的在线教学平台，实现与老师在线实时交流，在平台内提供个性化辅导，老师亲 自制定辅导计划和为学员讲解和批改作业。</p>
           <p>03</p>
-          <p>拥有针对性的备考经验，可以给学员提供最务实的备考资料，发放高质量的考前 押题/模拟试题，同时进行详尽的试题分析与解答，有针对性性的帮助学员备考， 找出学员的学习薄弱项，针对不同学员查缺补漏，提高学员的通过率。</p>
+          <p>拥有针对性的备考经验，可以给学员提供最务实的备考资料，发放高质量的考前 押题/模拟试题，同时进行详尽的试题分析与解答，有针对性性的帮助学员备考，
+            找出学员的学习薄弱项，针对不同学员查缺补漏，提高学员的通过率。</p>
           <p>04</p>
           <p>线上课程直播录播，现在定点面授，专属教学网站，随时随地学习;工作，提升两不误。</p>
         </div>
@@ -250,7 +266,20 @@
   </div>
 </template>
 
-<style scoped>
+<script>
+import {loop2} from "~/service/animation";
+
+export default {
+  name: 'loop2',
+
+  mounted() {
+    loop2('caseLoop2', 3000);
+  }
+}
+
+</script>
+
+<style lang="scss" scoped>
 /** {*/
 /*  margin: 0 auto;*/
 /*  padding: 0;*/
@@ -337,7 +366,7 @@ li {
   width: 100%;
 }
 
-.cooperationList p{
+.cooperationList p {
   height: 42px;
 }
 
@@ -429,7 +458,7 @@ li {
   border: 1px solid #D3D3D3;
 }
 
-.caseButtonUl{
+.caseButtonUl {
   margin-top: 30px;
 }
 
@@ -444,19 +473,33 @@ li {
   border: 1px solid #D3D3D3;
 }
 
+.caseLoopBox {
+  position: relative;
+  width: 1020px;
+  overflow: hidden;
+  margin: 30px auto;
+
+}
+
 .caseLoop {
-  margin: 0 auto;
-  width: 1000px;
-  display: flex;
-}
+  //width: 1020px;
+  height: 280px;
+  //display: flex;
+  width: 2040px;
 
-.caseLoop div {
-  flex-grow: 1;
-  text-align: center;
-}
 
-.caseLoop div img {
-  width: 300px;
+  div {
+    float: left;
+    width: 340px;
+    height: 280px;
+    /*flex-grow: 1;*/
+    padding: 0 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 @font-face {
@@ -476,11 +519,6 @@ li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
-}
-
-.caseLoopBox {
-  margin-top: 30px;
-  position: relative;
 }
 
 .prevFont {
@@ -508,13 +546,13 @@ li {
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-color: #314a7f;
+  background-color: #aaaaaa;
   border-radius: 50%;
+  margin-left: 10px;
 }
 
-.loopIndex a:nth-child(2) {
-  background-color: #aaaaaa;
-  margin-left: 10px;
+#rotation2 .currentIndex2{
+  background-color: #314a7f;
 }
 
 .promote4 .promoteContent p:nth-child(even) {
@@ -528,7 +566,7 @@ li {
   margin-bottom: 10px;
 }
 
-.promote4 img{
+.promote4 img {
   height: 450px;
 }
 </style>

@@ -63,25 +63,7 @@ export default {
   },
 
   mounted() {
-    // move();
-    // let a = tools.ele('banner');
-    // console.log(a)
-
-    // linearAnimation('banner','banner',50, 800);
-    // slowAnimation();
-
-    let obj = {
-      marginLeft : 1800,
-      height: 900
-    }
-
-    for (const key in obj) {
-      console.log(key)
-      console.log(obj[key])
-
-    }
-
-    loop('loop');
+    loop('loop', 3000);
   }
 }
 
