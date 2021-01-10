@@ -1,22 +1,39 @@
 <template>
   <div>
+    {{ title}}
+
     <AHead></AHead>
 <!--    <NewsList></NewsList>-->
 
-    <Footer></Footer>
+<!--    <Footer></Footer>-->
+
   </div>
 </template>
 
-<script>
-import AHead from '~/components/home/AHead';
-import NewsList from "~/components/news/NewsList"
-import Footer from '~/components/home/Footer';
+<script lang="ts">
+import AHead from '~/components/home/AHead.vue';
+// import NewsList from "~/components/news/NewsList.vue"
+// import Footer from '~/components/home/Footer.vue';
+import { Vue, Component } from 'vue-property-decorator'
 
-export default {
-  name: 'register',
-  components: {
-    AHead, NewsList, Footer
+@Component
+export default class newsLoading extends Vue{
+  title:string = 'a';
+
+
+  setTitle(title:string):void{
+    this.title = 'aaaaa';
   }
+
+  getTitle():string{
+    return this.title;
+  }
+
+  create(){
+    this.title = 'aaaaa';
+  }
+
+
 }
 </script>
 
